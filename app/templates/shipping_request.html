@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="" method="post">
+    {{form.csrf_token}}
+    <div>
+        {{form.sender.label}} {{form.sender}}
+        {{form.recipent.label}} {{form.recipent}}
+        {{form.destination.label}} {{form.destination}}
+        {{form.express_shipping.label}} {{form.express_shipping}}
+       
+    </div>
+    <div>
+        {{form.submit_button}}
+    </div>
+</form>
+
+{% endblock %}
