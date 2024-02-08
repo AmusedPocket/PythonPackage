@@ -4,10 +4,11 @@
 <form action="" method="post">
     {{form.csrf_token}}
     <div>
-        {{form.sender.label}} {{form.sender}}
-        {{form.recipent.label}} {{form.recipent}}
-        {{form.destination.label}} {{form.destination}}
-        {{form.express_shipping.label}} {{form.express_shipping}}
+        <p>{{form.sender.label}} {{form.sender}}</p>
+        <p>{{form.recipent.label}} {{form.recipent}}</p>  
+        <p>{{form.origin.label}} {{form.origin}}</p> 
+        <p>{{form.destination.label}} {{form.destination}}</p>    
+        <p>{{form.express_shipping.label}} {{form.express_shipping}}</p>    
        
     </div>
     <div>
